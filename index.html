@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limbah Medis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.globe.min.js"
+        integrity="sha512-cfeQlKIIaFDUyrmXLF3uv1DSprgNRSSptQF6lyPPmsnXhR2M8qtQ4B6pMQJE3BePiGHRefNCVO4u5/FUSzMkbQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="vanta-bg"></div>
+
+    <i class="fa-solid fa-bars"></i>
+    <nav>
+        <div class="sidebar">
+            <h3>dasboard limbah medis</h3>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>beranda</li>
+                <li><i class="fa-solid fa-chart-simple"></i>statistik</li>
+                <li><i class="fa-regular fa-note-sticky"></i>laporan</li>
+                <li><i class="fa-solid fa-gear"></i>pengaturan</li>
+            </ul>
+            <div class="logout">
+                <button>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    logout
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="content">
+                <h3>selamat datang di dasboard pengolahan limbah medis</h3>
+                <div class="data">
+                    <div class="total">
+                        <h4>total limbah medis</h4>
+                        <h2>1,200 kg</h2>
+                    </div>
+                    <div class="daurUlang">
+                        <h4>limbah daur ulang</h4>
+                        <h2>800 kg</h2>
+                    </div>
+                    <div class="berbahaya">
+                        <h4>limbah berbahaya</h4>
+                        <h2>400 kg</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="statistik">
+        <div class="statistik">
+            <h4>statistik pengolahan</h4>
+            <!-- <div class="chart">
+                <div class="diagram">
+                    <div class="fill">
+                        <progress style="height: 95%;"></progress>
+                    </div>
+                    <span>daur ulang</span>
+                </div>
+                <div class="diagram">
+                    <div class="fill">
+                        <progress style="height: 50%;"></progress>
+                    </div>
+                    <span>berbahaya</span>
+                </div>
+                <div class="diagram">
+                    <div class="fill">
+                        <progress style="height: 30%;"></progress>
+                    </div>
+                    <span>lainnya</span>
+                </div>
+            </div> -->
+            <div class="container">
+                <canvas id="myChart" style="width:100%;max-width:550px"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <section id="laporan">
+        <div class="container">
+            <h4>laporan terakhir</h4>
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>tanggal</th>
+                            <th>jenis limbah</th>
+                            <th>berat (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01-01-2020</td>
+                            <td>plastik</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>01-01-2021</td>
+                            <td>botol</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>01-01-2022</td>
+                            <td>plastik</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>01-01-2023</td>
+                            <td>botol</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>01-01-2024</td>
+                            <td>plastik</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>01-01-2025</td>
+                            <td>botol</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
