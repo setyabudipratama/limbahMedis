@@ -645,7 +645,7 @@ body {
                 left: 10%;
 
                 .content {
-                    height: 35vh;
+                    min-height: 35vh;
 
                     form {
                         flex-direction: column;
@@ -666,7 +666,7 @@ body {
 
                         .button {
                             bottom: 10%;
-                            left: 50%;
+                            right: -5%;
                             transform: translateX(-50%);
                         }
                     }
