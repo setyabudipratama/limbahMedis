@@ -649,6 +649,10 @@ body {
                         .volume {
                             justify-content: center;
 
+                            input {
+                                width: 150px;
+                            }
+
                             label {
                                 text-align: center;
                             }
