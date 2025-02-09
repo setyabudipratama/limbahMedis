@@ -514,8 +514,8 @@ body {
         .fa-xmark {
             display: block;
             position: fixed;
-            left: 2%;
-            top: 20%;
+            left: 5%;
+            top: 22%;
             width: 30px;
             height: 30px;
             display: flex;
