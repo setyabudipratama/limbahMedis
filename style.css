@@ -648,10 +648,14 @@ body {
                         .jenis,
                         .volume {
                             justify-content: center;
+
+                            label {
+                                text-align: center;
+                            }
                         }
 
                         .button {
-                            bottom: 2%;
+                            bottom: 10%;
                             left: 50%;
                             transform: translateX(-50%);
                         }
