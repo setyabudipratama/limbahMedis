@@ -23,6 +23,9 @@ document.querySelector('nav ul li:nth-child(2)').addEventListener('click', funct
     document.querySelector('#statistik').scrollIntoView({ behavior: 'smooth' })
 })
 document.querySelector('nav ul li:nth-child(3)').addEventListener('click', function() {
+    document.querySelector('#input').scrollIntoView({ behavior: 'smooth' })
+})
+document.querySelector('nav ul li:nth-child(4)').addEventListener('click', function() {
     document.querySelector('#laporan').scrollIntoView({ behavior: 'smooth' })
 })
 
@@ -62,3 +65,7 @@ const chart = new Chart(myChart, {
         }
     }
 });
+
+document.querySelector('#input .container .content form .button button').addEventListener('click', function(e) {
+    e.preventDefault()
+})
